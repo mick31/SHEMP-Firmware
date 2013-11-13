@@ -1,0 +1,1 @@
+"./uart.obj" "./main.obj" "./hal_pmm.obj" -l"libc.a" "../lnk_msp430f5438a.cmd" 

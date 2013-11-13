@@ -1,0 +1,36 @@
+
+**** Build of configuration Debug for project SHEMP - 2.2 DNS ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../html.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv5/tools/compiler/msp430_4.1.5/bin/cl430" -vmspx --abi=coffabi -g --include_path="C:/ti/ccsv5/ccs_base/msp430/include" --include_path="C:/ti/ccsv5/tools/compiler/msp430_4.1.5/include" --define=__MSP430F5438A__ --diag_warning=225 --display_error_number --silicon_errata=CPU15 --silicon_errata=CPU18 --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="html.pp"  "../html.c"
+"..\leds.h", line 34: warning #230-D: trailing comma is nonstandard
+"../html.c", line 43: error #20: identifier "Removed" is undefined
+"../html.c", line 43: error #66: expected a ";"
+"../html.c", line 131: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 152: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 156: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 156: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+
+>> Compilation failure
+"../html.c", line 173: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../html.c", line 175: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 180: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../html.c", line 182: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 187: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../html.c", line 191: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 193: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 201: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../html.c", line 202: warning #225-D: function declared implicitly
+"../html.c", line 227: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 235: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 247: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 256: error #20: identifier "html_host_ip_prefix" is undefined
+"../html.c", line 258: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+"../html.c", line 260: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+3 errors detected in the compilation of "../html.c".
+gmake: *** [html.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****

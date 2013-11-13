@@ -1,0 +1,1 @@
+"./wattage_sensor.obj" "./uart.obj" "./time.obj" "./temperature_sensor.obj" "./shempserver.obj" "./sensors.obj" "./roving.obj" "./main.obj" "./linked_list.obj" "./light_sensor.obj" "./leds.obj" "./html.obj" "./hal_pmm.obj" "./events.obj" "./auxlib.obj" "./audio_sensor.obj" -l"libc.a" "../lnk_msp430f5438a.cmd" 

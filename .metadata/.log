@@ -1,0 +1,696 @@
+!SESSION 2012-10-19 13:30:13.319 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.osgi 2 1 2012-10-19 13:34:29.800
+!MESSAGE NLS missing message: MemoryDumper_dialog_invalidHeaderError in: com.ti.ccstudio.debug.ui.CCSDebugUIMessages
+
+!ENTRY com.ti.ccstudio.buildDefinitions.core 4 0 2012-10-19 13:35:58.197
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.buildDefinitions.core'.
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unrecognized option setting '--silicon_errata=CPU30' for tool 'com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.compilerDebug.1212910254'
+	at com.ti.ccstudio.devicemodel.Device.processOptionSettingsLine(Device.java:902)
+	at com.ti.ccstudio.devicemodel.Device.processOptionSettingsLine(Device.java:885)
+	at com.ti.ccstudio.devicemodel.Device.processOptionSettingsLines(Device.java:865)
+	at com.ti.ccstudio.devicemodel.Device.initializeBuildConfiguration(Device.java:750)
+	at com.ti.ccstudio.project.core.internal.initializer.CCSConfigurationInitializer.doInitializeDeviceSpecifiedBuildOptions(CCSConfigurationInitializer.java:259)
+	at com.ti.common.project.core.internal.initializer.AConfigurationInitializer.internalInitializeBuildOptions(AConfigurationInitializer.java:281)
+	at com.ti.common.project.core.internal.initializer.AConfigurationInitializer.internalInitializeBuildOptions(AConfigurationInitializer.java:255)
+	at com.ti.common.project.core.internal.initializer.AConfigurationInitializer.initialize(AConfigurationInitializer.java:66)
+	at com.ti.ccstudio.project.core.services.ProjectModifier$1.run(ProjectModifier.java:555)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.ti.ccstudio.project.core.services.ProjectModifier.modifyCCSProject(ProjectModifier.java:549)
+	at com.ti.ccstudio.project.core.services.ProjectCreator$1.run(ProjectCreator.java:676)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.ti.ccstudio.project.core.services.ProjectCreator.createCCSProject(ProjectCreator.java:670)
+	at com.ti.ccstudio.project.ui.internal.wizards.project.NewCCSProjectWizard.createProject(NewCCSProjectWizard.java:211)
+	at com.ti.ccstudio.project.ui.internal.wizards.project.NewCCSProjectWizard.access$0(NewCCSProjectWizard.java:208)
+	at com.ti.ccstudio.project.ui.internal.wizards.project.NewCCSProjectWizard$2.execute(NewCCSProjectWizard.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1029)
+	at com.ti.ccstudio.project.ui.internal.wizards.project.NewCCSProjectWizard.performFinish(NewCCSProjectWizard.java:160)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:827)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:432)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.ti.ccstudio.buildDefinitions.core 4 0 2012-10-19 13:35:58.280
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.buildDefinitions.core'.
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: Unrecognized option setting '--silicon_errata=CPU30' for tool 'com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.compilerRelease.1160339847'
+	at com.ti.ccstudio.devicemodel.Device.processOptionSettingsLine(Device.java:902)
+	at com.ti.ccstudio.devicemodel.Device.processOptionSettingsLine(Device.java:885)
+	at com.ti.ccstudio.devicemodel.Device.processOptionSettingsLines(Device.java:865)
+	at com.ti.ccstudio.devicemodel.Device.initializeBuildConfiguration(Device.java:750)
+	at com.ti.ccstudio.project.core.internal.initializer.CCSConfigurationInitializer.doInitializeDeviceSpecifiedBuildOptions(CCSConfigurationInitializer.java:259)
+	at com.ti.common.project.core.internal.initializer.AConfigurationInitializer.internalInitializeBuildOptions(AConfigurationInitializer.java:281)
+	at com.ti.common.project.core.internal.initializer.AConfigurationInitializer.internalInitializeBuildOptions(AConfigurationInitializer.java:255)
+	at com.ti.common.project.core.internal.initializer.AConfigurationInitializer.initialize(AConfigurationInitializer.java:66)
+	at com.ti.ccstudio.project.core.services.ProjectModifier$1.run(ProjectModifier.java:555)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.ti.ccstudio.project.core.services.ProjectModifier.modifyCCSProject(ProjectModifier.java:549)
+	at com.ti.ccstudio.project.core.services.ProjectCreator$1.run(ProjectCreator.java:676)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at com.ti.ccstudio.project.core.services.ProjectCreator.createCCSProject(ProjectCreator.java:670)
+	at com.ti.ccstudio.project.ui.internal.wizards.project.NewCCSProjectWizard.createProject(NewCCSProjectWizard.java:211)
+	at com.ti.ccstudio.project.ui.internal.wizards.project.NewCCSProjectWizard.access$0(NewCCSProjectWizard.java:208)
+	at com.ti.ccstudio.project.ui.internal.wizards.project.NewCCSProjectWizard$2.execute(NewCCSProjectWizard.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1029)
+	at com.ti.ccstudio.project.ui.internal.wizards.project.NewCCSProjectWizard.performFinish(NewCCSProjectWizard.java:160)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:827)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:432)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-10-19 13:36:05.672
+!MESSAGE Indexed 'SHEMP - Roving Config' (0 sources, 19 headers) in 2.06 sec: 396 declarations; 450 references; 4 unresolved inclusions; 0 syntax errors; 7 unresolved names (0.82%)
+
+!ENTRY org.eclipse.core.resources 4 4 2012-10-19 13:36:58.584
+!MESSAGE Exception occurred while saving project preferences: /SHEMP - 0.0 - ROVING CONFIG/.settings/org.eclipse.cdt.debug.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk 'C:\Users\Nathan\Documents\SHEMP_firmware\SHEMP - 0.0 - ROVING CONFIG\.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:95)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:590)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:440)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:350)
+	at org.eclipse.cdt.debug.core.CDebugUtils.setToggleBreakpointFactory(CDebugUtils.java:718)
+	at com.ti.ccstudio.debug.internal.ui.breakpoint.actions.ToggleCCSBreakpointTester$1$1$1.runInWorkspace(ToggleCCSBreakpointTester.java:119)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2012-10-19 13:36:58.585
+!MESSAGE A resource already exists on disk 'C:\Users\Nathan\Documents\SHEMP_firmware\SHEMP - 0.0 - ROVING CONFIG\.settings'.
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2012-10-19 13:36:58.631
+!MESSAGE Internal error logged from CDI Debug: 
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception occurred while saving project preferences: /SHEMP - 0.0 - ROVING CONFIG/.settings/org.eclipse.cdt.debug.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:600)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:440)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:350)
+	at org.eclipse.cdt.debug.core.CDebugUtils.setToggleBreakpointFactory(CDebugUtils.java:718)
+	at com.ti.ccstudio.debug.internal.ui.breakpoint.actions.ToggleCCSBreakpointTester$1$1$1.runInWorkspace(ToggleCCSBreakpointTester.java:119)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 4 2012-10-19 13:36:58.641
+!MESSAGE Exception occurred while saving project preferences: /SHEMP - 0.0 - ROVING CONFIG/.settings/org.eclipse.cdt.debug.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk 'C:\Users\Nathan\Documents\SHEMP_firmware\SHEMP - 0.0 - ROVING CONFIG\.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:95)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:590)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:440)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:350)
+	at org.eclipse.cdt.debug.core.CDebugUtils.setToggleBreakpointFactory(CDebugUtils.java:718)
+	at com.ti.ccstudio.debug.internal.ui.breakpoint.actions.ToggleCCSBreakpointTester$1$1$1.runInWorkspace(ToggleCCSBreakpointTester.java:119)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2012-10-19 13:36:58.642
+!MESSAGE A resource already exists on disk 'C:\Users\Nathan\Documents\SHEMP_firmware\SHEMP - 0.0 - ROVING CONFIG\.settings'.
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2012-10-19 13:36:58.649
+!MESSAGE Internal error logged from CDI Debug: 
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception occurred while saving project preferences: /SHEMP - 0.0 - ROVING CONFIG/.settings/org.eclipse.cdt.debug.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:600)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:440)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:350)
+	at org.eclipse.cdt.debug.core.CDebugUtils.setToggleBreakpointFactory(CDebugUtils.java:718)
+	at com.ti.ccstudio.debug.internal.ui.breakpoint.actions.ToggleCCSBreakpointTester$1$1$1.runInWorkspace(ToggleCCSBreakpointTester.java:119)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-10-19 13:36:59.429
+!MESSAGE Indexed 'SHEMP - 0.0 - ROVING CONFIG' (3 sources, 15 headers) in 0.14 sec: 53 declarations; 128 references; 17 unresolved inclusions; 0 syntax errors; 204 unresolved names (52.99%)
+
+!ENTRY org.eclipse.core.resources 4 4 2012-10-19 13:37:26.565
+!MESSAGE Exception occurred while saving project preferences: /SHEMP - 2.2 DNS/.settings/org.eclipse.cdt.debug.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk 'C:\Users\Nathan\Documents\SHEMP_firmware\SHEMP - 2.2 DNS\.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:95)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:590)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:440)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:350)
+	at org.eclipse.cdt.debug.core.CDebugUtils.setToggleBreakpointFactory(CDebugUtils.java:718)
+	at com.ti.ccstudio.debug.internal.ui.breakpoint.actions.ToggleCCSBreakpointTester$1$1$1.runInWorkspace(ToggleCCSBreakpointTester.java:119)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2012-10-19 13:37:26.565
+!MESSAGE A resource already exists on disk 'C:\Users\Nathan\Documents\SHEMP_firmware\SHEMP - 2.2 DNS\.settings'.
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2012-10-19 13:37:26.568
+!MESSAGE Internal error logged from CDI Debug: 
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception occurred while saving project preferences: /SHEMP - 2.2 DNS/.settings/org.eclipse.cdt.debug.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:600)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:440)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:350)
+	at org.eclipse.cdt.debug.core.CDebugUtils.setToggleBreakpointFactory(CDebugUtils.java:718)
+	at com.ti.ccstudio.debug.internal.ui.breakpoint.actions.ToggleCCSBreakpointTester$1$1$1.runInWorkspace(ToggleCCSBreakpointTester.java:119)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 4 2012-10-19 13:37:26.573
+!MESSAGE Exception occurred while saving project preferences: /SHEMP - 2.2 DNS/.settings/org.eclipse.cdt.debug.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk 'C:\Users\Nathan\Documents\SHEMP_firmware\SHEMP - 2.2 DNS\.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:95)
+	at org.eclipse.core.internal.resources.ProjectPreferences$1.run(ProjectPreferences.java:566)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:590)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:440)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:350)
+	at org.eclipse.cdt.debug.core.CDebugUtils.setToggleBreakpointFactory(CDebugUtils.java:718)
+	at com.ti.ccstudio.debug.internal.ui.breakpoint.actions.ToggleCCSBreakpointTester$1$1$1.runInWorkspace(ToggleCCSBreakpointTester.java:119)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2012-10-19 13:37:26.573
+!MESSAGE A resource already exists on disk 'C:\Users\Nathan\Documents\SHEMP_firmware\SHEMP - 2.2 DNS\.settings'.
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2012-10-19 13:37:26.576
+!MESSAGE Internal error logged from CDI Debug: 
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception occurred while saving project preferences: /SHEMP - 2.2 DNS/.settings/org.eclipse.cdt.debug.core.prefs.
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:600)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:440)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:350)
+	at org.eclipse.cdt.debug.core.CDebugUtils.setToggleBreakpointFactory(CDebugUtils.java:718)
+	at com.ti.ccstudio.debug.internal.ui.breakpoint.actions.ToggleCCSBreakpointTester$1$1$1.runInWorkspace(ToggleCCSBreakpointTester.java:119)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-10-19 13:37:28.299
+!MESSAGE Indexed 'SHEMP - 2.2 DNS' (16 sources, 29 headers) in 0.98 sec: 1,278 declarations; 5,195 references; 42 unresolved inclusions; 0 syntax errors; 1,264 unresolved names (16.34%)
+!SESSION 2013-08-27 10:03:14.582 -----------------------------------------------
+eclipse.buildId=M20120914-1540
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.ui 2 0 2013-08-27 10:03:33.413
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-08-27 10:03:33.414
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-08-27 10:03:33.414
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-08-27 10:03:33.414
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-08-27 10:03:33.414
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-08-27 10:03:33.414
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-08-27 10:03:33.414
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-08-27 10:03:33.414
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-08-27 10:03:33.414
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-08-27 10:03:41.830
+!MESSAGE Indexed 'SHEMP - 0.0 - ROVING CONFIG' (3 sources, 11 headers) in 2.54 sec: 1,544 declarations; 2,086 references; 0 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-08-27 10:03:46.106
+!MESSAGE Indexed 'SHEMP - 2.2 DNS' (16 sources, 30 headers) in 2.30 sec: 3,044 declarations; 8,453 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.02%)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-08-27 10:07:53.802
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-08-27 10:07:53.869
+!MESSAGE DS_ERROR: Error connecting to the target:
+The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-08-27 10:08:02.745
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-08-27 10:08:02.767
+!MESSAGE DS_ERROR: Error connecting to the target:
+The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-08-27 10:08:16.696
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-08-27 10:08:16.718
+!MESSAGE DS_ERROR: Error connecting to the target:
+The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-08-27 13:30:06.469
+!MESSAGE DS_ERROR: MSP430: Error initializing emulator: No USB FET was found
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-08-27 13:30:06.938
+!MESSAGE DS_ERROR: Error initializing emulator:
+No USB FET was found
+
+!ENTRY org.eclipse.ui 4 0 2013-08-27 16:43:26.538
+!MESSAGE Problems opening perspective 'com.ti.ccstudio.TICPerspective'
+!SESSION 2013-09-03 13:20:32.249 -----------------------------------------------
+eclipse.buildId=M20120914-1540
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-09-03 13:20:45.014
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-09-03 13:20:56.077
+!MESSAGE Error
+!STACK 0
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.size(Unknown Source)
+	at org.eclipse.cdt.internal.core.parser.scanner.FileCharArray.create(FileCharArray.java:44)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createFileContent(InternalParserUtil.java:247)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(InternalParserUtil.java:176)
+	at org.eclipse.cdt.core.parser.FileContent.create(FileContent.java:114)
+	at org.eclipse.cdt.internal.core.parser.SavedFilesProvider.getContentForInclusion(SavedFilesProvider.java:40)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor$1.checkFile(CPreprocessor.java:157)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor$1.checkFile(CPreprocessor.java:1)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.findInclusion(CPreprocessor.java:1093)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.executeInclude(CPreprocessor.java:1472)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.executeDirective(CPreprocessor.java:1248)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.internalFetchToken(CPreprocessor.java:879)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.fetchToken(CPreprocessor.java:603)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.nextToken(CPreprocessor.java:700)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.fetchToken(AbstractGNUSourceCodeParser.java:273)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.nextToken(AbstractGNUSourceCodeParser.java:297)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.acceptInactiveCodeBoundary(AbstractGNUSourceCodeParser.java:358)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.declarationList(AbstractGNUSourceCodeParser.java:1319)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.parseTranslationUnit(AbstractGNUSourceCodeParser.java:1292)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.translationUnit(AbstractGNUSourceCodeParser.java:1287)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.parse(AbstractGNUSourceCodeParser.java:653)
+	at org.eclipse.cdt.core.dom.parser.AbstractCLikeLanguage.getASTTranslationUnit(AbstractCLikeLanguage.java:149)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:869)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:819)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.rtsc.xdctools.ui.contentassist.RTSCHelpProvider.getFunctionSummaries(Unknown Source)
+	at org.eclipse.rtsc.xdctools.ui.contentassist.RTSCHelpProvider.getFunctionInfo(Unknown Source)
+	at org.eclipse.rtsc.xdctools.ui.contentassist.RTSCHelpProvider.getFunctionInfo(Unknown Source)
+	at org.eclipse.cdt.internal.ui.text.CHelpSettings.getFunctionInfo(CHelpSettings.java:121)
+	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getFunctionInfo(CHelpProviderManager.java:163)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CDocHover.getHoverInfo(CDocHover.java:81)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractCEditorTextHover.getHoverInfo2(AbstractCEditorTextHover.java:84)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:144)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:84)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.cdt.core 4 0 2013-09-03 13:20:56.108
+!MESSAGE Error
+!STACK 0
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(Unknown Source)
+	at sun.nio.ch.FileChannelImpl.size(Unknown Source)
+	at org.eclipse.cdt.internal.core.parser.scanner.FileCharArray.create(FileCharArray.java:44)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createFileContent(InternalParserUtil.java:247)
+	at org.eclipse.cdt.internal.core.parser.InternalParserUtil.createWorkspaceFileContent(InternalParserUtil.java:176)
+	at org.eclipse.cdt.core.parser.FileContent.create(FileContent.java:114)
+	at org.eclipse.cdt.internal.core.parser.SavedFilesProvider.getContentForInclusion(SavedFilesProvider.java:40)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor$1.checkFile(CPreprocessor.java:157)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor$1.checkFile(CPreprocessor.java:1)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.findInclusion(CPreprocessor.java:1134)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.executeInclude(CPreprocessor.java:1472)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.executeDirective(CPreprocessor.java:1248)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.internalFetchToken(CPreprocessor.java:879)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.fetchToken(CPreprocessor.java:603)
+	at org.eclipse.cdt.internal.core.parser.scanner.CPreprocessor.nextToken(CPreprocessor.java:700)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.fetchToken(AbstractGNUSourceCodeParser.java:273)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.nextToken(AbstractGNUSourceCodeParser.java:297)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.acceptInactiveCodeBoundary(AbstractGNUSourceCodeParser.java:358)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.declarationList(AbstractGNUSourceCodeParser.java:1319)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.parseTranslationUnit(AbstractGNUSourceCodeParser.java:1292)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.translationUnit(AbstractGNUSourceCodeParser.java:1287)
+	at org.eclipse.cdt.internal.core.dom.parser.AbstractGNUSourceCodeParser.parse(AbstractGNUSourceCodeParser.java:653)
+	at org.eclipse.cdt.core.dom.parser.AbstractCLikeLanguage.getASTTranslationUnit(AbstractCLikeLanguage.java:149)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:869)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.getAST(TranslationUnit.java:819)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.rtsc.xdctools.ui.contentassist.RTSCHelpProvider.getFunctionSummaries(Unknown Source)
+	at org.eclipse.rtsc.xdctools.ui.contentassist.RTSCHelpProvider.getFunctionInfo(Unknown Source)
+	at org.eclipse.rtsc.xdctools.ui.contentassist.RTSCHelpProvider.getFunctionInfo(Unknown Source)
+	at org.eclipse.cdt.internal.ui.text.CHelpSettings.getFunctionInfo(CHelpSettings.java:121)
+	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getFunctionInfo(CHelpProviderManager.java:163)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CDocHover.getHoverInfo(CDocHover.java:81)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractCEditorTextHover.getHoverInfo2(AbstractCEditorTextHover.java:84)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:144)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:84)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:22:09.168
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:22:09.230
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:22:15.761
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:22:15.777
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:25:51.548
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:25:51.611
+!MESSAGE DS_ERROR: Error connecting to the target:
+The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:25:58.111
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:25:58.142
+!MESSAGE DS_ERROR: Error connecting to the target:
+The target setup (MSP430F5438A) does not match the actual target type (MSP430G2xx3)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:26:03.267
+!MESSAGE DS_ERROR: MSP430: Trouble Writing Memory Block at 0x5c00 on Page 0 of Length 0x36: Could not write device memory
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:26:03.298
+!MESSAGE DS_ERROR: MSP430: GEL: File: Y:\mijbenne@soe.ucsc.edu\SHEMP FILES\SHEMP- Prior to Summer 2013\Firmware\SHEMP_firmware\SHEMP_firmware\SHEMP - 0.0 - ROVING CONFIG\Debug\SHEMP - 0.0 - ROVING CONFIG.out: Load failed.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:26:46.979
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:26:47.025
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:26:51.573
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:26:51.603
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:27:15.782
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:27:15.797
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:27:20.844
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:27:20.875
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:28:23.417
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:28:23.465
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:28:32.089
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:28:32.104
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:29:01.141
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:29:01.187
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:29:05.766
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:29:05.797
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:30:24.047
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:30:24.093
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:30:28.390
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:30:28.422
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:31:36.109
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:31:36.156
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:31:40.781
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:31:40.812
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:31:43.703
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:31:43.734
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:32:28.371
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:32:28.418
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:32:32.027
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:32:32.059
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:32:35.871
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:32:35.903
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:32:38.683
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:32:38.699
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:33:31.262
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:33:31.324
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:33:38.825
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:33:38.855
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:33:42.543
+!MESSAGE DS_ERROR: MSP430: Error connecting to the target: Could not find device (or device not supported)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 13:33:42.558
+!MESSAGE DS_ERROR: Error connecting to the target:
+Could not find device (or device not supported)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 14:16:17.979
+!MESSAGE DS_ERROR: MSP430: GEL: Encountered a problem loading file: Y:\mijbenne@soe.ucsc.edu\SHEMP FILES\SHEMP- Prior to Summer 2013\Firmware\SHEMP_firmware\SHEMP_firmware\SHEMP - 2.2 DNS\Debug\SHEMP - 2.2 DNS.out Could not open file
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2013-09-03 14:18:07.807
+!MESSAGE DS_ERROR: MSP430: GEL: Encountered a problem loading file: Y:\mijbenne@soe.ucsc.edu\SHEMP FILES\SHEMP- Prior to Summer 2013\Firmware\SHEMP_firmware\SHEMP_firmware\SHEMP - 2.2 DNS\Debug\SHEMP - 2.2 DNS.out Could not open file
+
+!SESSION 2013-11-08 12:00:09.657 -----------------------------------------------
+eclipse.buildId=M20120914-1540
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-11-08 12:00:16.235
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-11-08 12:00:19.001
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY com.ti.ccstudio.debug.server 4 214294189 2013-11-08 12:00:31.485
+!MESSAGE Unexpected CCS exit detected [9/3/13 1:20 PM]!!!
