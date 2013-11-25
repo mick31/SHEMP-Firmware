@@ -4,15 +4,15 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/msp430_4.1.5
+CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/msp430_4.2.1
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
 "./uart.obj" \
 "./main.obj" \
 "./hal_pmm.obj" \
--l"libc.a" \
 "../lnk_msp430f5438a.cmd" \
+-l"libc.a" \
 
 -include ../makefile.init
 
@@ -117,7 +117,7 @@ all: SHEMP\ -\ 0.0\ -\ ROVING\ CONFIG.out
 SHEMP\ -\ 0.0\ -\ ROVING\ CONFIG.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
-	"C:/ti/ccsv5/tools/compiler/msp430_4.1.5/bin/cl430" -vmspx --abi=coffabi -g --define=__MSP430F5438A__ --diag_warning=225 --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"SHEMP - 0.0 - ROVING CONFIG.map" --stack_size=160 --heap_size=160 --use_hw_mpy=F5 -i"C:/ti/ccsv5/ccs_base/msp430/include" -i"C:/ti/ccsv5/tools/compiler/msp430_4.1.5/lib" -i"C:/ti/ccsv5/tools/compiler/msp430_4.1.5/include" --reread_libs --warn_sections --rom_model -o "SHEMP - 0.0 - ROVING CONFIG.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/bin/cl430" -vmspx --abi=coffabi -g --define=__MSP430F5438A__ --diag_warning=225 --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"SHEMP - 0.0 - ROVING CONFIG.map" --stack_size=160 --heap_size=160 --use_hw_mpy=F5 -i"C:/ti/ccsv5/ccs_base/msp430/include" -i"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/lib" -i"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/include" --reread_libs --warn_sections --xml_link_info="SHEMP - 0.0 - ROVING CONFIG_linkInfo.xml" --rom_model -o "SHEMP - 0.0 - ROVING CONFIG.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -133,3 +133,4 @@ clean:
 .SECONDARY:
 
 -include ../makefile.targets
+

@@ -40,7 +40,7 @@ const uint8_t html_pass_prefix[] = "<tr><td style='text-align:right'>WiFi Passwo
 const uint8_t html_pass_form[] = "<input name=PASS type=text>";
 const uint8_t html_pass_suffix[] = "</td></tr>";
 
- Removed so traffic only goes through shempserver.com
+//Removed so traffic only goes through shempserver.com
 const uint8_t html_host_ip_prefix[] = "<tr><td style='text-align:right'>Server:</td><td>";
 const uint8_t html_host_ip_form[] = "<input name=HOST type=text>";
 const uint8_t html_host_ip_suffix[] = "</td></tr>";

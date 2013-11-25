@@ -8,7 +8,7 @@
 #include "shempserver.h"
 
 
-const uint8_t SERIAL_NUMBER[] = "000011";
+const uint8_t SERIAL_NUMBER[] = "000007";
 
 
 uint8_t output_buffer[OUTPUT_BUFFER_SIZE];

@@ -1,7 +1,7 @@
 ******************************************************************************
-                  MSP430 Linker PC v4.1.5                      
+                  MSP430 Linker PC v4.2.1                      
 ******************************************************************************
->> Linked Tue Sep 03 13:21:59 2013
+>> Linked Mon Nov 25 15:23:51 2013
 
 OUTPUT FILE NAME:   <SHEMP - 0.0 - ROVING CONFIG.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00005c00
@@ -827,7 +827,10 @@ ffffffff   .text
 000000a0   __STACK_SIZE
 00000001   __TI_args_main
 00000001   __TI_auto_init
+000023dc   __TI_cleanup_ptr
+000023e0   __TI_dtors_ptr
 00000001   __TI_exit
+0000ffe8   __TI_int52
 ffffffff   __binit__
 00001c00   __bss__
 ffffffff   __c_args__
@@ -838,8 +841,6 @@ ffffffff   __pinit__
 ffffffff   __text__
 00005c00   _c_int00
 00005c00   _c_int00_noinit_noexit
-000023dc   _cleanup_ptr
-000023e0   _dtors_ptr
 000023d4   _lock
 00006042   _nop
 0000fffe   _reset_vector
@@ -1556,8 +1557,8 @@ address    name
 00001c04   input_buffer
 000023d4   _lock
 000023d8   _unlock
-000023dc   _cleanup_ptr
-000023e0   _dtors_ptr
+000023dc   __TI_cleanup_ptr
+000023e0   __TI_dtors_ptr
 000023e4   __end__
 000023e4   end
 00005b60   _stack
@@ -1582,6 +1583,7 @@ address    name
 0000603e   C$$EXIT
 0000603e   abort
 00006042   _nop
+0000ffe8   __TI_int52
 0000fffe   _reset_vector
 ffffffff   .text
 ffffffff   __binit__
@@ -1595,4 +1597,4 @@ ffffffff   cinit
 ffffffff   etext
 ffffffff   pinit
 
-[723 symbols]
+[724 symbols]

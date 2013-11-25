@@ -1,7 +1,7 @@
 ******************************************************************************
-                  MSP430 Linker PC v4.1.5                      
+                  MSP430 Linker PC v4.2.1                      
 ******************************************************************************
->> Linked Tue Aug 27 13:31:51 2013
+>> Linked Mon Nov 25 15:24:06 2013
 
 OUTPUT FILE NAME:   <SHEMP - 2.2 DNS.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00005cee
@@ -19,7 +19,7 @@ MEMORY CONFIGURATION
   INFOB                 00001900   00000080  00000000  00000080  RWIX
   INFOA                 00001980   00000080  00000000  00000080  RWIX
   RAM                   00001c00   00004000  00003ebe  00000142  RWIX
-  FLASH                 00005c00   0000a380  000056c7  00004cb9  RWIX
+  FLASH                 00005c00   0000a380  000056af  00004cd1  RWIX
   INT00                 0000ff80   00000002  00000000  00000002  RWIX
   INT01                 0000ff82   00000002  00000000  00000002  RWIX
   INT02                 0000ff84   00000002  00000000  00000002  RWIX
@@ -370,7 +370,7 @@ section   page    origin      length       input sections
                   00009ddc    00000004     linked_list.obj (.text:node_get_val)
                   00009de0    00000002     rts430x.lib : _lock.obj (.text:_nop)
 
-.const     0    00009de2    000014e5     
+.const     0    00009de2    000014cd     
                   00009de2    00000e14     temperature_sensor.obj (.const:temp_lookup_table)
                   0000abf6    000001aa     roving.obj (.const:.string)
                   0000ada0    00000097     html.obj (.const:.string:html_submit_button)
@@ -387,27 +387,26 @@ section   page    origin      length       input sections
                   0000b0e3    00000001     --HOLE-- [fill = 0]
                   0000b0e4    00000053     html.obj (.const:.string:http_header)
                   0000b137    00000001     --HOLE-- [fill = 0]
-                  0000b138    00000049     html.obj (.const:.string:html_host_ip_prefix)
-                  0000b181    00000001     --HOLE-- [fill = 0]
-                  0000b182    00000039     html.obj (.const:.string:html_pass_prefix)
-                  0000b1bb    00000001     --HOLE-- [fill = 0]
-                  0000b1bc    00000035     html.obj (.const:.string:html_ssid_prefix)
-                  0000b1f1    00000001     --HOLE-- [fill = 0]
-                  0000b1f2    0000001e     html.obj (.const:.string:html_footer)
-                  0000b210    0000001c     html.obj (.const:.string:html_host_ip_form)
-                  0000b22c    0000001c     html.obj (.const:.string:html_pass_form)
-                  0000b248    0000001c     html.obj (.const:.string:html_ssid_form)
-                  0000b264    0000001a     html.obj (.const:.string)
-                  0000b27e    00000012     html.obj (.const:.string:html_input_error)
-                  0000b290    0000000b     html.obj (.const:.string:html_host_ip_suffix)
+                  0000b138    00000039     html.obj (.const:.string:html_pass_prefix)
+                  0000b171    00000001     --HOLE-- [fill = 0]
+                  0000b172    00000035     html.obj (.const:.string:html_ssid_prefix)
+                  0000b1a7    00000001     --HOLE-- [fill = 0]
+                  0000b1a8    00000032     html.obj (.const:.string:html_host_ip_prefix)
+                  0000b1da    0000001e     html.obj (.const:.string:html_footer)
+                  0000b1f8    0000001c     html.obj (.const:.string:html_host_ip_form)
+                  0000b214    0000001c     html.obj (.const:.string:html_pass_form)
+                  0000b230    0000001c     html.obj (.const:.string:html_ssid_form)
+                  0000b24c    0000001a     html.obj (.const:.string)
+                  0000b266    00000012     html.obj (.const:.string:html_input_error)
+                  0000b278    0000000b     html.obj (.const:.string:html_host_ip_suffix)
+                  0000b283    00000001     --HOLE-- [fill = 0]
+                  0000b284    0000000b     html.obj (.const:.string:html_number_of_slaves_suffix)
+                  0000b28f    00000001     --HOLE-- [fill = 0]
+                  0000b290    0000000b     html.obj (.const:.string:html_pass_suffix)
                   0000b29b    00000001     --HOLE-- [fill = 0]
-                  0000b29c    0000000b     html.obj (.const:.string:html_number_of_slaves_suffix)
+                  0000b29c    0000000b     html.obj (.const:.string:html_ssid_suffix)
                   0000b2a7    00000001     --HOLE-- [fill = 0]
-                  0000b2a8    0000000b     html.obj (.const:.string:html_pass_suffix)
-                  0000b2b3    00000001     --HOLE-- [fill = 0]
-                  0000b2b4    0000000b     html.obj (.const:.string:html_ssid_suffix)
-                  0000b2bf    00000001     --HOLE-- [fill = 0]
-                  0000b2c0    00000007     shempserver.obj (.const:.string:SERIAL_NUMBER)
+                  0000b2a8    00000007     shempserver.obj (.const:.string:SERIAL_NUMBER)
 
 .int42     0    0000ffd4    00000002     
                   0000ffd4    00000002     main.obj (.int42)
@@ -868,7 +867,7 @@ ffffffff   .text
 000004b6   RTCYEAR
 000004b7   RTCYEAR_H
 000004b6   RTCYEAR_L
-0000b2c0   SERIAL_NUMBER
+0000b2a8   SERIAL_NUMBER
 00000100   SFRIE1
 00000101   SFRIE1_H
 00000100   SFRIE1_L
@@ -1152,7 +1151,13 @@ ffffffff   .text
 00001800   __SYSMEM_SIZE
 00000001   __TI_args_main
 00000001   __TI_auto_init
+00003f96   __TI_cleanup_ptr
+00003f9a   __TI_dtors_ptr
 00000001   __TI_exit
+0000ffd4   __TI_int42
+0000ffde   __TI_int47
+0000ffe8   __TI_int52
+0000ffee   __TI_int55
 ffffffff   __binit__
 00001c00   __bss__
 ffffffff   __c_args__
@@ -1174,8 +1179,6 @@ ffffffff   __text__
 00008a3c   _auto_init
 00005cee   _c_int00
 00005cee   _c_int00_noexit
-00003f96   _cleanup_ptr
-00003f9a   _dtors_ptr
 00003f8e   _lock
 00009de0   _nop
 0000fffe   _reset_vector
@@ -1313,28 +1316,28 @@ ffffffff   etext
 0000890a   host_setup_mode
 00007eae   html_GET
 0000339c   html_buffer
-0000b1f2   html_footer
+0000b1da   html_footer
 0000aec2   html_header_01
 0000ae38   html_header_02
 0000b01c   html_header_03
-0000b210   html_host_ip_form
-0000b138   html_host_ip_prefix
-0000b290   html_host_ip_suffix
-0000b27e   html_input_error
+0000b1f8   html_host_ip_form
+0000b1a8   html_host_ip_prefix
+0000b278   html_host_ip_suffix
+0000b266   html_input_error
 0000af3c   html_instructions_01
 0000afac   html_instructions_02
 00003394   html_number_of_slaves_field
 0000b084   html_number_of_slaves_prefix
-0000b29c   html_number_of_slaves_suffix
+0000b284   html_number_of_slaves_suffix
 0000397a   html_page_length
-0000b22c   html_pass_form
-0000b182   html_pass_prefix
-0000b2a8   html_pass_suffix
+0000b214   html_pass_form
+0000b138   html_pass_prefix
+0000b290   html_pass_suffix
 00009b8a   html_reset
 0000971a   html_send
-0000b248   html_ssid_form
-0000b1bc   html_ssid_prefix
-0000b2b4   html_ssid_suffix
+0000b230   html_ssid_form
+0000b172   html_ssid_prefix
+0000b29c   html_ssid_suffix
 0000ada0   html_submit_button
 00009038   html_write
 00003978   html_write_ptr
@@ -2304,8 +2307,8 @@ address    name
 00003f8c   main_mode
 00003f8e   _lock
 00003f92   _unlock
-00003f96   _cleanup_ptr
-00003f9a   _dtors_ptr
+00003f96   __TI_cleanup_ptr
+00003f9a   __TI_dtors_ptr
 00003fa6   led_state
 00003fa8   cur_time
 00003faa   ping_time
@@ -2608,19 +2611,23 @@ address    name
 0000b01c   html_header_03
 0000b084   html_number_of_slaves_prefix
 0000b0e4   http_header
-0000b138   html_host_ip_prefix
-0000b182   html_pass_prefix
-0000b1bc   html_ssid_prefix
-0000b1f2   html_footer
-0000b210   html_host_ip_form
-0000b22c   html_pass_form
-0000b248   html_ssid_form
-0000b27e   html_input_error
-0000b290   html_host_ip_suffix
-0000b29c   html_number_of_slaves_suffix
-0000b2a8   html_pass_suffix
-0000b2b4   html_ssid_suffix
-0000b2c0   SERIAL_NUMBER
+0000b138   html_pass_prefix
+0000b172   html_ssid_prefix
+0000b1a8   html_host_ip_prefix
+0000b1da   html_footer
+0000b1f8   html_host_ip_form
+0000b214   html_pass_form
+0000b230   html_ssid_form
+0000b266   html_input_error
+0000b278   html_host_ip_suffix
+0000b284   html_number_of_slaves_suffix
+0000b290   html_pass_suffix
+0000b29c   html_ssid_suffix
+0000b2a8   SERIAL_NUMBER
+0000ffd4   __TI_int42
+0000ffde   __TI_int47
+0000ffe8   __TI_int52
+0000ffee   __TI_int55
 0000fffe   _reset_vector
 ffffffff   .text
 ffffffff   __binit__
@@ -2632,4 +2639,4 @@ ffffffff   binit
 ffffffff   etext
 ffffffff   pinit
 
-[1098 symbols]
+[1102 symbols]

@@ -2,6 +2,66 @@
 **** Build of configuration Debug for project SHEMP - 0.0 - ROVING CONFIG ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
+'Building file: ../hal_pmm.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/bin/cl430" -vmspx --abi=coffabi -g --include_path="C:/ti/ccsv5/ccs_base/msp430/include" --include_path="C:/ti/ccsv5/tools/compiler/msp430_4.2.1/include" --define=__MSP430F5438A__ --diag_warning=225 --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="hal_pmm.pp"  "../hal_pmm.c"
+'Finished building: ../hal_pmm.c'
+' '
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/bin/cl430" -vmspx --abi=coffabi -g --include_path="C:/ti/ccsv5/ccs_base/msp430/include" --include_path="C:/ti/ccsv5/tools/compiler/msp430_4.2.1/include" --define=__MSP430F5438A__ --diag_warning=225 --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 57: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 58: warning #994-D: missing return statement at end of non-void function "send_command"
+"../main.c", line 82: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 85: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 87: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 88: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 89: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 90: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 91: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 92: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 94: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 95: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 96: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 97: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 98: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 100: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 101: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 102: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 103: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 104: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 106: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 107: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 108: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 109: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 110: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 111: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 114: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 115: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 116: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 117: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 118: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 119: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 120: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 121: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 122: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 123: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 125: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 126: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../main.c", line 127: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+'Finished building: ../main.c'
+' '
+'Building file: ../uart.c'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/bin/cl430" -vmspx --abi=coffabi -g --include_path="C:/ti/ccsv5/ccs_base/msp430/include" --include_path="C:/ti/ccsv5/tools/compiler/msp430_4.2.1/include" --define=__MSP430F5438A__ --diag_warning=225 --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="uart.pp"  "../uart.c"
+"../uart.c", line 49: warning #169-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+'Finished building: ../uart.c'
+' '
+'Building target: SHEMP - 0.0 - ROVING CONFIG.out'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/bin/cl430" -vmspx --abi=coffabi -g --define=__MSP430F5438A__ --diag_warning=225 --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"SHEMP - 0.0 - ROVING CONFIG.map" --stack_size=160 --heap_size=160 --use_hw_mpy=F5 -i"C:/ti/ccsv5/ccs_base/msp430/include" -i"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/lib" -i"C:/ti/ccsv5/tools/compiler/msp430_4.2.1/include" --reread_libs --warn_sections --xml_link_info="SHEMP - 0.0 - ROVING CONFIG_linkInfo.xml" --rom_model -o "SHEMP - 0.0 - ROVING CONFIG.out"  "./uart.obj" "./main.obj" "./hal_pmm.obj" "../lnk_msp430f5438a.cmd" -l"libc.a" 
+<Linking>
+'Finished building target: SHEMP - 0.0 - ROVING CONFIG.out'
+' '
 
 **** Build Finished ****
